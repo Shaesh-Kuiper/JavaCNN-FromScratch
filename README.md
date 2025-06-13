@@ -2,6 +2,8 @@
 
 This project demonstrates a complete implementation of a Convolutional Neural Network (CNN) in Java from scratch, without any external libraries. It includes the full training and inference pipeline for the FashionMNIST dataset, highlighting core deep learning algorithms and data structures.
 
+At the end of 5 epochs you can expect a accuracy of 87+ %
+
 ## 🚀 Run the Project
 
 1. **Clone the repository**

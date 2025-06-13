@@ -20,4 +20,14 @@ This project demonstrates a complete implementation of a Convolutional Neural Ne
   **NOTE**: Training time depends on the number of epochs (on average, 1 epoch takes 5–10 minutes).
             After training, a file named trained-model.bin will be saved containing the learned model.
 
-4. 
+4. **Run inference**
+   ```bash
+   java Inference trained-model.bin data\FashionMNIST\raw\t10k-images-idx3-ubyte data\FashionMNIST\raw\t10k-labels-idx1-ubyte
+
+This runs prediction on a single sample from the test set.
+It takes three arguments:
+   1) Path to the trained model file
+   2) Path to the test images file
+   3) Path to the test labels file
+
+   

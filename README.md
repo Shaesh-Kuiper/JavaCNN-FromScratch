@@ -7,4 +7,4 @@ This project demonstrates a complete implementation of a Convolutional Neural Ne
 1. **Clone the repository**
    ```bash
    git clone https://github.com/your-username/JavaCNN.git
-   cd JavaCNN
+   cd JavaCNN-FromScratch

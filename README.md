@@ -17,7 +17,7 @@ This project demonstrates a complete implementation of a Convolutional Neural Ne
    ```bash
    java Trainer
 
-**NOTE**: Training time depends on the number of epochs (on average, 1 epoch takes 5–10 minutes).
-          After training, a file named trained-model.bin will be saved containing the learned                model.
+  **NOTE**: Training time depends on the number of epochs (on average, 1 epoch takes 5–10 minutes).
+            After training, a file named trained-model.bin will be saved containing the learned model.
 
 4. 

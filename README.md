@@ -30,6 +30,8 @@ It takes three arguments:
    2) Path to the test images file
    3) Path to the test labels file
 
+
+
    
 ## 🔍 Overview
 
@@ -148,3 +150,8 @@ Performs image classification:
 - Data loading from IDX binary format  
 
 ---
+
+## 🧠 Why?
+
+This project is aimed at **demystifying deep learning** by writing everything yourself. It builds the bridge between **theoretical understanding** and **practical implementation** — completely in Java.
+

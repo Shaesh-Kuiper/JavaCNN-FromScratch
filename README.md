@@ -155,3 +155,14 @@ Performs image classification:
 
 This project is aimed at **demystifying deep learning** by writing everything yourself. It builds the bridge between **theoretical understanding** and **practical implementation** — completely in Java.
 
+## 🙏 Usage & Attribution
+
+This project is open for learning and inspiration. If you use or build upon this work, **please give credit** to the original author:
+
+**Created by [Sarvesh R]**  
+GitHub: [@your-github-username](https://github.com/Shaesh-Kuiper)
+LinkedIn: [your-linkedin](https://www.linkedin.com/in/sarveshrk/)
+Email: [your-email@example.com](shvoyager2k4@gmail.com)
+
+A simple mention or link back is appreciated! 💙
+

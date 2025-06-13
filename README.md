@@ -162,7 +162,9 @@ This project is open for learning and inspiration. If you use or build upon this
 **Created by [Sarvesh R]**
 
 GitHub: [Shaesh-Kuiper](https://github.com/Shaesh-Kuiper)
+
 LinkedIn: [Sarvesh R](https://www.linkedin.com/in/sarveshrk/)
+
 Email: [shvoyager2k4@gmail.com](shvoyager2k4@gmail.com)
 
 A simple mention or link back is appreciated! 💙

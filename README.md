@@ -31,3 +31,120 @@ It takes three arguments:
    3) Path to the test labels file
 
    
+## 🔍 Overview
+
+**JavaCNN** is a learning project designed to understand how CNNs, gradient descent, and backpropagation work internally by building everything from the ground up. It covers:
+
+- CNN architecture implementation  
+- Manual backpropagation  
+- Multithreaded execution  
+- Data loading and processing  
+- Training and evaluation loop  
+- Model inference with softmax visualization  
+
+---
+
+## 🧠 Components
+
+### 📦 `Conv2D.java`
+Implements a convolutional layer:
+
+- 3×3 kernels, stride 1, valid padding  
+- Forward and backward passes  
+- Xavier initialization  
+- Parallelized with `ExecutorService` for output channels  
+
+### 🌀 `MaxPool2D.java`
+Implements 2×2 max pooling:
+
+- Downsamples feature maps  
+- Stores max positions for backprop  
+- Sparse gradient propagation in backward pass  
+
+### 🧮 `Dense.java`
+Fully connected layer:
+
+- Manual matrix multiplication  
+- He initialization  
+- Backprop with gradient update using SGD  
+
+### 🔥 `ReLU.java`
+Applies ReLU activation:
+
+- Element-wise `max(0, x)`  
+- Gradient zeroed for negatives during backward pass  
+
+### 📉 `CrossEntropyLoss.java`
+Handles loss calculation:
+
+- Softmax + Negative log-likelihood  
+- Stable computation via max-subtraction trick  
+- Computes softmax gradient manually  
+
+### 🧵 `ThreadPool.java`
+Custom thread pool:
+
+- 4-core fixed thread executor  
+- Shared by layers like `Conv2D`  
+- Optimizes CPU usage for forward/backward passes  
+
+### 📁 `Utils.java`
+Loads FashionMNIST data:
+
+- Parses IDX format (images + labels)  
+- Normalizes pixels to [0, 1]  
+- Wraps data in a custom `DataSet` object  
+
+### 🏗️ `CNNModel.java`
+Defines the CNN architecture:
+
+- 2 × (Conv → ReLU → Conv → ReLU → Pool)  
+- Final dense layer for classification  
+- Includes flattening from 3D to 1D  
+- Supports full forward and backward training pass  
+
+### 🏋️ `Trainer.java`
+Trains the CNN:
+
+- Loads and shuffles data  
+- Trains over mini-batches (batch size = 64)  
+- 2 training epochs using SGD  
+- Evaluates accuracy on test set  
+- Saves model to disk  
+
+### 🧪 `Inference.java`
+Performs image classification:
+
+- Loads a sample image and the trained model  
+- Runs forward pass and softmax  
+- Displays image and predicted label in GUI  
+
+---
+
+## ⚙️ Algorithms & Data Structures
+
+- Gradient descent and backpropagation implemented manually  
+- Uses only native Java arrays (1D–4D)  
+- Parallel execution for performance  
+- Classic DSA usage: arrays, loops, task queues, producer-consumer threading  
+- **No external ML or math libraries used**
+
+---
+
+## 📌 Highlights
+
+- **End-to-end CNN implementation in Java**  
+- **Educational focus**: understand the math and logic behind training neural networks  
+- **Works entirely offline**  
+- **Ideal for learners** exploring DL fundamentals  
+
+---
+
+## 🗂️ Dataset
+
+- [FashionMNIST](https://github.com/zalandoresearch/fashion-mnist)  
+- 28×28 grayscale images  
+- 10 classes (e.g., sneakers, t-shirts, bags)  
+- Data loading from IDX binary format  
+
+---

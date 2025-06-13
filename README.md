@@ -159,11 +159,10 @@ This project is aimed at **demystifying deep learning** by writing everything yo
 
 This project is open for learning and inspiration. If you use or build upon this work, **please give credit** to the original author:
 
-**Created by [Sarvesh R]**  
+**Created by [Sarvesh R]**
+
 GitHub: [Shaesh-Kuiper](https://github.com/Shaesh-Kuiper)
-
 LinkedIn: [Sarvesh R](https://www.linkedin.com/in/sarveshrk/)
-
 Email: [shvoyager2k4@gmail.com](shvoyager2k4@gmail.com)
 
 A simple mention or link back is appreciated! 💙

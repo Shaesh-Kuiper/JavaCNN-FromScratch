@@ -8,3 +8,16 @@ This project demonstrates a complete implementation of a Convolutional Neural Ne
    ```bash
    git clone git@github.com:Shaesh-Kuiper/JavaCNN-FromScratch.git
    cd JavaCNN-FromScratch
+
+2. **Compile all .java files**
+   ```bash
+   javac -encoding UTF-8 *.java
+
+3. **Run the training**
+   ```bash
+   java Trainer
+
+**NOTE**: Training time depends on the number of epochs (on average, 1 epoch takes 5–10 minutes).
+          After training, a file named trained-model.bin will be saved containing the learned                model.
+
+4. 
